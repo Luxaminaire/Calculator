@@ -1,0 +1,43 @@
+#container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: moccasin;
+    display: inline-block;
+    /* border: 5px solid black; */
+    
+}
+h1{
+    justify-content: center;
+    text-align: center;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(6, 133px);
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+}
+body{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cell{
+    color: black;
+    border: 5px solid black;
+    height: 133px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+      justify-content: center;
+  display: flex;
+  font-family: Arial;
+  font-size: 2rem;
+  font-weight: bold;
+  background: white;
+
+}
