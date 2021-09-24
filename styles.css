@@ -2,9 +2,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: moccasin;
+    background: black;
     display: inline-block;
-    /* border: 5px solid black; */
     
 }
 h1{
@@ -19,6 +18,7 @@ h1{
     justify-content: center;
     align-items: center;
     text-align: center;  
+    border: 5px solid black;
 }
 body{
     justify-content: center;
@@ -27,17 +27,32 @@ body{
 }
 .cell{
     color: black;
-    border: 5px solid black;
     height: 133px;
     width: 200px;
     justify-content: center;
     align-items: center;
     text-align: center;
-      justify-content: center;
-  display: flex;
-  font-family: Arial;
-  font-size: 2rem;
-  font-weight: bold;
-  background: white;
+    display: flex;
+    font-family: Arial;
+    font-size: 2rem;
+    font-weight: bold;
+    background: white;
+    transition: all .2s ease-in-out;
 
+}
+.cell:hover{
+    transform: scale(1.05); 
+    box-shadow: gainsboro;
+}
+#display{
+    display: block;
+    background-color: papayawhip;
+    width: auto;
+    height: 200px;
+    justify-content: right;
+    font-size: 100px;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    color: black;
 }
