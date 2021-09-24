@@ -36,11 +36,11 @@ let digits= "0123456789";
         if(onClickTarget === "=" && a.length > 0 && b.length > 0 ) {
             let val = operate(a, b, operator);
             isOnA = false;
-            a = val;
+            a = val.toString();
             b = "";
             operator = "";
-            output.innerText = Math.round10(val);//val.toPrecision(2);
-            console.log()
+            output.innerText = val;
+            console.log(a);
         }
     }
 
@@ -55,7 +55,7 @@ let digits= "0123456789";
     }
     function divide(a, b) {
         if (Number(b) !== 0) {
-            return Number(a) / Number(b);
+            return (Number(a) / Number(b)).toPrecision(2);
         }
     }
     function operate(a, b, operator) {
